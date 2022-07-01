@@ -4,6 +4,16 @@
   <title>Login Page</title>
 <meta name="viewport" content="initial-scale:1.0,maximum-scale:1.0">
 <link rel="icon" href="https://saintgits-mca.github.io/images/Logo.jpg">
+<script>
+function mail()
+{
+var regexp=document.getElementById('mail').value;
+if((/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(regexp))
+return(true)
+else
+alert("Wrong mail id");
+}
+</script>
  </head>
  <style>
    .topnav{background-color:white; 
@@ -44,9 +54,9 @@ background-color:White;
    <center><div id="topnav" style="width:350;height:320;" position="center">&emsp;&emsp;
 <h1 style="text-decoration:underline;text-weight:bold;text-decoration-color:blue;font-size:20" align="left">Login</h1><br>     
 &emsp;<label for="email"width="40px"></label> 
-   <input type="email" name="email" id="email" placeholder=" Username " style="background-color:lightgray;font-family:Sans-serif;font-style:italics;width:280px;height:30px;" required="Username"/><br /><br />
+   <input id="mail" type="email" name="email" id="email" placeholder=" Username " style="background-color:lightgray;font-family:Sans-serif;font-style:italics;width:280px;height:30px;" required="Username"/><br /><br />
    &emsp;<input type="password" name="Password" id="Password" placeholder="  Password" style="background-color:lightgray;font-family:sans-serif;font-style:italics;width:280px;height:30px;" required="Password"/>
-<br><br>&emsp;&emsp;&emsp;&emsp;<center><button style="font-family:sans-serif;background-color:blue;color:White;border-radius:7cm;border-color:blue;width:180px;font-size:21px;height:50px;"><b>Login</b></button></center><br>
+<br><br>&emsp;&emsp;&emsp;&emsp;<center><button style="font-family:sans-serif;background-color:blue;color:White;border-radius:7cm;border-color:blue;width:180px;font-size:21px;height:50px;" onclick="mail()"><b>Login</b></button></center><br>
 <a href="https://prudhwi2002.github.io/Login/Register" style="text-decoration:none;color:blue;">Click here to Register </a></form>
 </div></center>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
