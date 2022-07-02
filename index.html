@@ -8,7 +8,7 @@
 function mail()
 {
 var regexp=document.getElementById("mail").value;
-if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})$/.test(regexp))
+if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})$/.test(regform.email.value))
 return(true);
 else
 alert("Wrong mail id");
